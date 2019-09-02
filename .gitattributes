@@ -1,0 +1,3 @@
+build/* linguist-vendored
+.*.js linguist-vendored
+config/* linguist-vendored
