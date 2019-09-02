@@ -4,7 +4,7 @@
       "lastname": "Lupin",
       "pseudo": "TheToto",
       "short_bio_md": "étudiant en ingénieurie\n informatique à l'[EPITA](https://epita.fr \"Site web d'EPITA\").",
-      "avatar_url": "https://thetoto.fr/images/avatar.png",
+      "avatar_url": "/static/images/avatar.png",
       "email": "mail@thetoto.fr",
       "links": [
          {
