@@ -27,12 +27,12 @@
     <hr />
     <span id="proj_maj" class="toc" name="Projets majeurs">
       <h4>Projets majeurs</h4>
-      <ProjectList :list="presentation.projects" />
+      <ProjectList msn_id="maj" :list="presentation.projects" />
     </span>
     <hr />
     <span id="proj_perso" class="toc" name="Projets persos">
       <h4>Projets perso</h4>
-      <ProjectList :list="presentation.projects_perso" />
+      <ProjectList msn_id="perso" :list="presentation.projects_perso" />
     </span>
   </v-container>
 </template>

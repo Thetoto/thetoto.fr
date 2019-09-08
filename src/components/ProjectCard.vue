@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" :md="fullscreen ? 6 : 12" :lg="fullscreen ? 4 : 6">
+  <v-col class="msn-item" cols="12" :md="fullscreen ? 6 : 12" :lg="fullscreen ? 4 : 6">
     <v-card>
       <v-img :src="proj.image">
         <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
