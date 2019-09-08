@@ -1,10 +1,24 @@
+* {
+    transition: color 0.1s ease-in;
+}
+
+p {
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
+}
+
+.theme--light.v-application {
+    background: #eee !important;
 }
 
 #short-bio a {
     color: white;
 }
+
+
 
 .w50 {
     width: 50%;

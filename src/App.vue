@@ -98,13 +98,8 @@ export default {
 
 <style scoped>
 #header {
-  font-size: 20px;
   background-image: url("/images/bg.jpg");
   height: 100vh;
-}
-
-#router {
-  background-color: blanchedalmond;
 }
 
 .p-fixed {
