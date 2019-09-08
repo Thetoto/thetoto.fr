@@ -1,64 +1,58 @@
 <template>
-  <div class="container right-align white-text">
-    <div class="container right">
-      <a v-bind:href="infos.avatar_url">
-        <img class="responsive-img z-depth-5" v-bind:src="infos.avatar_url" />
-      </a>
+  <v-container class="d-flex h100 w70">
+    <div class="align-self-center text-right">
+      <div class="mb-5 w70 float-right">
+        <a :href="infos.avatar_url" class="w70">
+          <img id="avatar" class="elevation-14" :src="infos.avatar_url" />
+        </a>
+      </div>
+      <div class="float-right w100">
+        <p class="headline">{{ infos.firstname }} '{{ infos.pseudo }}' {{ infos.lastname}},</p>
+        <vue-markdown id="short-bio">{{ infos.short_bio_md }}</vue-markdown>
+        <hr class="my-3" />
+        <a
+          v-for="link in infos.links"
+          :key="link.url"
+          target="_blanc"
+          v-bind:href="link.url"
+          class="social"
+        >
+          <i v-bind:class="link.icon"></i>
+        </a>
+        <hr class="my-3" />
+        <p>
+          Email :
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on }">
+              <span v-on="on" @click="saveEmailClipboard">{{ infos.email }}</span>
+            </template>
+            <span>{{ email_clicked ? 'Copié !' : 'Cliquer pour copier' }}</span>
+          </v-tooltip>
+        </p>
+      </div>
     </div>
-    <br />
-    <h5>{{ infos.firstname }} '{{ infos.pseudo }}' {{ infos.lastname}},</h5>
-    <vue-markdown id="short-bio">{{ infos.short_bio_md }}</vue-markdown>
-    <hr />
-    <a
-      v-for="link in infos.links"
-      :key="link.url"
-      target="_blanc"
-      v-bind:href="link.url"
-      class="social"
-    >
-      <i v-bind:class="link.icon"></i>
-    </a>
-    <hr />
-    <p>
-      Email :
-      <span
-        ref="email_tooltip"
-        id="email-copy"
-        class="tooltipped"
-        data-position="bottom"
-        :data-tooltip="email_clicked ? 'Copié !' : 'Cliquer pour copier'"
-        @click="saveEmailClipboard"
-      >{{ infos.email }}</span>
-    </p>
-  </div>
+  </v-container>
 </template>
 
 <script>
+import store from "../store";
 import VueMarkdown from "vue-markdown";
-import M from "materialize-css/dist/js/materialize";
 
 export default {
+  name: "LeftPane",
   components: {
     VueMarkdown
   },
-  name: "LeftPane",
-  props: {
-    infos: Object
+  computed: {
+    infos: () => store.state.json.profile
   },
   data() {
     return {
       email_clicked: false
     };
   },
-  mounted() {
-    M.Tooltip.init(this.$refs.email_tooltip);
-  },
-  beforeDestroy() {
-    var tooltip = M.Tooltip.getInstance(this.$refs.email_tooltip);
-    tooltip.destroy();
-  },
   methods: {
-    saveEmailClipboard(event) {
+    saveEmailClipboard() {
       const el = document.createElement("textarea");
       el.value = "mail@thetoto.fr";
       document.body.appendChild(el);
@@ -66,36 +60,32 @@ export default {
       document.execCommand("copy");
       document.body.removeChild(el);
       this.email_clicked = true;
-
-      setTimeout(this.updateTooltip, 50);
-    },
-    updateTooltip(event) {
-      var tooltip = M.Tooltip.getInstance(this.$refs.email_tooltip);
-      tooltip.destroy();
-      tooltip = M.Tooltip.init(this.$refs.email_tooltip);
-      tooltip.open();
     }
   }
 };
 </script>
 
-<style>
-.social {
-  color: #e1e1e1;
-  margin-right: 20px;
-}
-.social:hover {
+<style scoped>
+* {
   color: white;
 }
+
+#avatar {
+  width: 100%;
+  height: auto;
+}
+
 .social i {
+  color: #e1e1e1;
   font-size: 35px;
+  margin-right: 20px;
+}
+.social i:hover {
+  color: white;
 }
 
 #short-bio {
   color: #e1e1e1;
-}
-#short-bio a {
-  color: white;
 }
 
 hr {

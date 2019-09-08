@@ -1,75 +1,113 @@
 <template>
-  <div id="app">
-    <div id="main" class="row grey lighten-3">
-      <div v-if="!fullscreen" id="header" class="col s12 m5 l4 valign-wrapper">
-        <LeftPane :infos="data.profile" />
-        <a v-if="!fullscreen" @click="fullscreen = true;" id="expand">
-          <TooltipButton class_other="hide-on-small-only btn-small" tooltip="Cacher la barre latérale" icon="nf nf-fa-arrow_left" />
-        </a>
-      </div>
-      <a v-if="fullscreen" @click="fullscreen = false;" id="reduce">
-        <TooltipButton class_other="hide-on-small-only btn-small" tooltip="Afficher la barre latérale" icon="nf nf-fa-arrow_right" />
-      </a>
-      <div v-if="!fullscreen" id="header-proxy" class="hide-on-small-only col s12 m5 l4"></div>
+  <v-app>
+    <v-content>
+      <v-row>
+        <v-col
+          v-if="!fullscreen"
+          :class="$vuetify.breakpoint.smAndDown ? '' : 'p-fixed'"
+          id="header"
+          cols="12"
+          md="5"
+          lg="4"
+        >
+          <LeftPane></LeftPane>
+          <v-tooltip v-model="show_on" bottom>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                v-on="on"
+                @click="on_fullscreen"
+                color="red lighten-1"
+                fab
+                small
+                absolute
+                right
+                style="top:50%"
+              >
+                <v-icon color="white">mdi-chevron-left</v-icon>
+              </v-btn>
+            </template>
+            <span>Cacher la barre latérale</span>
+          </v-tooltip>
+        </v-col>
 
-      <router-view :fullscreen="fullscreen" :presentation="data.presentation" />
-    </div>
-  </div>
+        <v-col
+          v-if="!$vuetify.breakpoint.smAndDown && !fullscreen"
+          id="header-proxy"
+          cols="12"
+          md="5"
+          lg="4"
+        ></v-col>
+        <v-col id="router" cols="12" :md="fullscreen ? 12 : 7" :lg="fullscreen ? 12 : 8">
+          <v-tooltip v-if="fullscreen" v-model="show_off" bottom>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                v-on="on"
+                @click="off_fullscreen"
+                color="red lighten-1"
+                fab
+                small
+                fixed
+                left
+                style="top:50%"
+              >
+                <v-icon color="white">mdi-chevron-right</v-icon>
+              </v-btn>
+            </template>
+            <span>Afficher la barre latérale</span>
+          </v-tooltip>
+
+          <router-view></router-view>
+        </v-col>
+      </v-row>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import VueMarkdown from "vue-markdown";
-
-import Presentation from "./components/Presentation";
-import TooltipButton from "./components/TooltipButton";
 import LeftPane from "./components/LeftPane";
+import store from "./store";
 
-import jsonData from "./assets/data.json";
-
-require("materialize-css/dist/css/materialize.min.css");
 require("./assets/styles/nerd-fonts.min.css");
 
 export default {
   name: "App",
   components: {
-    Presentation,
-    LeftPane,
-    VueMarkdown,
-    TooltipButton
+    LeftPane
   },
   data() {
     return {
-      data: jsonData,
-      fullscreen: false
+      show_on: false,
+      show_off: false
     };
+  },
+  computed: {
+    fullscreen: () => store.state.fullscreen
+  },
+  methods: {
+    on_fullscreen() {
+      this.show_on = false;
+      store.commit("swap_fullscreen");
+    },
+    off_fullscreen() {
+      this.show_off = false;
+      store.commit("swap_fullscreen");
+    }
   }
 };
 </script>
 
 <style scoped>
-#main {
-  font-size: 20px;
-}
-
-@media only screen and (min-width: 601px) {
-  #header {
-    position: fixed;
-  }
-}
-
 #header {
   font-size: 20px;
-  background-image: url("/static/images/bg.jpg");
+  background-image: url("/images/bg.jpg");
   height: 100vh;
 }
 
-#header-proxy {
-  height: 100vh;
+#router {
+  background-color: blanchedalmond;
 }
 
-#reduce {
+.p-fixed {
   position: fixed;
-  top: 50%;
-  left: 10px;
 }
 </style>
