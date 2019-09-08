@@ -90,7 +90,7 @@
       "projects": [
          {
             "name": "Elves Must Live",
-            "description": "Un jeu vidéo de \"Tower Defense\" crée sous *Unity3D* lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
+            "description": "Un jeu vidéo de \"Tower Defense\" crée sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
             "image": "/images/thumbs/eml.png",
             "icons": [
                "nf nf-mdi-language_csharp",

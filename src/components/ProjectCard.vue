@@ -1,0 +1,56 @@
+<template>
+  <v-col cols="12" :md="fullscreen ? 6 : 12" :lg="fullscreen ? 4 : 6">
+    <v-card>
+      <v-img :src="proj.image">
+        <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
+          <i v-for="icon in proj.icons" :key="icon" :class="icon" />
+        </v-card-title>
+      </v-img>
+      <div style="position:relative">
+        <CardFAB v-if="proj.floating" :floating="proj.floating" />
+        <v-card-title>
+          <span v-if="proj.iconsTitle" class="mr-2">
+            <i v-for="icon in proj.icons" :key="icon" :class="icon" />
+          </span>
+          {{ proj.name }}
+        </v-card-title>
+        <v-card-text>
+          <vue-markdown>{{ proj.description }}</vue-markdown>
+        </v-card-text>
+        <v-card-actions v-if="proj.links">
+          <v-btn
+            text
+            v-for="link in proj.links"
+            :key="link.link"
+            @click="urlOpen(link.link)"
+          >{{ link.name }}</v-btn>
+        </v-card-actions>
+      </div>
+    </v-card>
+  </v-col>
+</template>
+
+<script>
+import VueMarkdown from "vue-markdown";
+import store from "../store";
+import CardFAB from "./CardFAB";
+
+export default {
+  name: "ProjectCard",
+  components: { VueMarkdown, CardFAB },
+  props: {
+    proj: Object
+  },
+  computed: {
+    fullscreen: () => store.state.fullscreen
+  },
+  methods: {
+    urlOpen(url) {
+      window.open(url, "_blank");
+    }
+  }
+};
+</script>
+
+<style>
+</style>

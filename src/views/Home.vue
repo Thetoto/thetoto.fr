@@ -27,14 +27,12 @@
     <hr />
     <span id="proj_maj" class="toc" name="Projets majeurs">
       <h4>Projets majeurs</h4>
-            <h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1>
-      <!-- <Projects :fullscreen="fullscreen" :list="presentation.projects" /> -->
+      <ProjectList :list="presentation.projects" />
     </span>
     <hr />
     <span id="proj_perso" class="toc" name="Projets persos">
       <h4>Projets perso</h4>
-      <h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1><h1>Hi</h1>
-      <!-- <Projects :fullscreen="fullscreen" :list="presentation.projects_perso" /> -->
+      <ProjectList :list="presentation.projects_perso" />
     </span>
   </v-container>
 </template>
@@ -44,11 +42,13 @@ import store from "../store";
 import VueMarkdown from "vue-markdown";
 
 import Toc from "../components/Toc";
-import Skills from "../components/Skills"
+import Skills from "../components/Skills";
+
+import ProjectList from "../components/ProjectList";
 
 export default {
   name: "Home",
-  components: { VueMarkdown, Toc, Skills },
+  components: { VueMarkdown, Toc, Skills, ProjectList },
   computed: {
     presentation: () => store.state.json.presentation,
     fullscreen: () => store.state.fullscreen
