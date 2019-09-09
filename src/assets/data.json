@@ -4,7 +4,7 @@
       "lastname": "Lupin",
       "pseudo": "TheToto",
       "short_bio_md": "étudiant en ingénieurie\n informatique à l'[EPITA](https://epita.fr \"Site web d'EPITA\").",
-      "avatar_url": "/static/images/avatar.png",
+      "avatar_url": "/images/avatar.png",
       "email": "mail@thetoto.fr",
       "links": [
          {
@@ -90,8 +90,8 @@
       "projects": [
          {
             "name": "Elves Must Live",
-            "description": "Un jeu vidéo de \"Tower Defense\" crée sous *Unity3D* lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
-            "image": "/static/images/thumbs/eml.png",
+            "description": "Un jeu vidéo de \"Tower Defense\" crée sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
+            "image": "/images/thumbs/eml.png",
             "icons": [
                "nf nf-mdi-language_csharp",
                "nf nf-dev-unity_small"
@@ -102,7 +102,6 @@
                "link": "https://elves-must-live.tk/",
                "tooltip": "Site Web"
             },
-            "hover": false,
             "links": [
                {
                   "name": "Github",
@@ -117,7 +116,7 @@
          {
             "name": "Eye of the Graeae",
             "description": "Eye of the Graeae est un logicel de reconnaissance optique de caractères (OCR) basé sur la technologie des réseaux de neuronnes. (Proof of concept)",
-            "image": "/static/images/thumbs/eye.png",
+            "image": "/images/thumbs/eye.png",
             "icons": [
                "nf nf-custom-c"
             ],
@@ -126,8 +125,7 @@
                "icon": "nf nf-oct-mark_github",
                "link": "https://github.com/Thetoto/Eye-of-the-Graeae",
                "tooltip": "GitHub"
-            },
-            "hover": false
+            }
          },
          {
             "name": "42sh (shell interactif)",
@@ -169,7 +167,7 @@
          {
             "name": "Tranzat Creator",
             "description": "Créez votre propre tranzat grâce à mon créateur de Tranzat ! Choisissez votre bouche, vos yeux, etc, puis exportez votre tranzat en PNG.",
-            "image": "/static/images/thumbs/tranzat.png",
+            "image": "/images/thumbs/tranzat.png",
             "icons": [
                "nf nf-dev-html5",
                "nf nf-dev-javascript_badge"
@@ -180,7 +178,6 @@
                "link": "https://tranzat.thetoto.fr/",
                "tooltip": "Site Web"
             },
-            "hover": false,
             "links": [
                {
                   "name": "Github",
@@ -191,7 +188,7 @@
          {
             "name": "Animation Source app",
             "description": "Application android réalisée en ReactNative, par pur amusement. Elle permet de naviger sur le site [Animation Source](https://animationsource.org/) de manière simple sur mobile. Elle est accompagnée d'une API (HTML parsing) developpée en NodeJS pour récupérer les informations.",
-            "image": "/static/images/thumbs/asapp.png",
+            "image": "/images/thumbs/asapp.png",
             "icons": [
                "nf nf-dev-nodejs_small",
                "nf nf-dev-react"
@@ -202,7 +199,6 @@
                "link": "https://github.com/Thetoto/AS_App",
                "tooltip": "GitHub"
             },
-            "hover": false,
             "links": [
                {
                   "name": "API Node.JS",
