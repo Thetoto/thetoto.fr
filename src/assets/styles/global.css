@@ -1,29 +1,29 @@
 * {
     transition: color 0.1s ease-in;
 }
-
 p {
     font-size: 20px;
 }
-
 a {
     text-decoration: none;
 }
 
+/* Change background colors */
 .theme--light.v-application {
     background: #eee !important;
 }
+/* Weird fix for vuetify */
+.v-tooltip__content--fixed {
+    position: fixed;
+}
 
+/* link inside vue-markdown */
 #short-bio a {
     color: white;
 }
 
 
-
-.w50 {
-    width: 50%;
-    margin: 0 auto;
-}
+/* Some helpers */
 .w70 {
     width: 70%;
     margin: 0 auto;
