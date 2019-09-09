@@ -29,6 +29,10 @@ export default {
       var _this = this;
       setTimeout(() => _this.$redrawVueMasonry(this.msn_id), 50);
     }
+  },
+  mounted() {
+    var _this = this;
+    setTimeout(() => _this.$redrawVueMasonry(this.msn_id), 100);
   }
 };
 </script>
