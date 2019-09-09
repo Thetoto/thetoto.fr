@@ -4,14 +4,14 @@
       <v-card :elevation="hover ? 12 : 2">
         <v-img :src="proj.image">
           <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
-            <i v-for="icon in proj.icons" :key="icon" :class="icon" />
+            <i v-for="icon in proj.icons" :key="icon" :class="icon" style="font-size:34px" />
           </v-card-title>
         </v-img>
         <div style="position:relative">
           <CardFAB v-if="proj.floating" :floating="proj.floating" :pulse="hover" />
           <v-card-title>
-            <span v-if="proj.iconsTitle" class="mr-2">
-              <i v-for="icon in proj.icons" :key="icon" :class="icon" />
+            <span v-if="proj.iconsTitle" class="mr-1">
+              <i v-for="icon in proj.icons" :key="icon" :class="icon" class="mr-1" />
             </span>
             {{ proj.name }}
           </v-card-title>
@@ -37,7 +37,7 @@
 import VueMarkdown from "vue-markdown";
 import store from "../store";
 
-import CardFAB from "./CardFAB";
+import CardFAB from "./small/CardFAB";
 
 export default {
   name: "ProjectCard",
@@ -55,6 +55,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

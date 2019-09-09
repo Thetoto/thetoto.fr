@@ -13,7 +13,7 @@
         right
         fab
       >
-        <i :class="floating.icon" />
+        <i style="font-size:24px" :class="floating.icon" />
       </v-btn>
     </template>
     <span>{{ floating.tooltip }}</span>
