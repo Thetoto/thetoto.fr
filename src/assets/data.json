@@ -102,7 +102,6 @@
                "link": "https://elves-must-live.tk/",
                "tooltip": "Site Web"
             },
-            "hover": false,
             "links": [
                {
                   "name": "Github",
@@ -126,8 +125,7 @@
                "icon": "nf nf-oct-mark_github",
                "link": "https://github.com/Thetoto/Eye-of-the-Graeae",
                "tooltip": "GitHub"
-            },
-            "hover": false
+            }
          },
          {
             "name": "42sh (shell interactif)",
@@ -180,7 +178,6 @@
                "link": "https://tranzat.thetoto.fr/",
                "tooltip": "Site Web"
             },
-            "hover": false,
             "links": [
                {
                   "name": "Github",
@@ -202,7 +199,6 @@
                "link": "https://github.com/Thetoto/AS_App",
                "tooltip": "GitHub"
             },
-            "hover": false,
             "links": [
                {
                   "name": "API Node.JS",
