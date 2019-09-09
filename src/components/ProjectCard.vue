@@ -1,38 +1,42 @@
 <template>
   <v-col class="msn-item" cols="12" :md="fullscreen ? 6 : 12" :lg="fullscreen ? 4 : 6">
-    <v-card>
-      <v-img :src="proj.image">
-        <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
-          <i v-for="icon in proj.icons" :key="icon" :class="icon" />
-        </v-card-title>
-      </v-img>
-      <div style="position:relative">
-        <CardFAB v-if="proj.floating" :floating="proj.floating" />
-        <v-card-title>
-          <span v-if="proj.iconsTitle" class="mr-2">
+    <v-hover v-slot:default="{ hover }">
+      <v-card :elevation="hover ? 12 : 2">
+        <v-img :src="proj.image">
+          <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
             <i v-for="icon in proj.icons" :key="icon" :class="icon" />
-          </span>
-          {{ proj.name }}
-        </v-card-title>
-        <v-card-text>
-          <vue-markdown>{{ proj.description }}</vue-markdown>
-        </v-card-text>
-        <v-card-actions v-if="proj.links">
-          <v-btn
-            text
-            v-for="link in proj.links"
-            :key="link.link"
-            @click="urlOpen(link.link)"
-          >{{ link.name }}</v-btn>
-        </v-card-actions>
-      </div>
-    </v-card>
+          </v-card-title>
+        </v-img>
+        <div style="position:relative">
+          <CardFAB v-if="proj.floating" :floating="proj.floating" :pulse="hover" />
+          <v-card-title>
+            <span v-if="proj.iconsTitle" class="mr-2">
+              <i v-for="icon in proj.icons" :key="icon" :class="icon" />
+            </span>
+            {{ proj.name }}
+          </v-card-title>
+          <v-card-text>
+            <vue-markdown>{{ proj.description }}</vue-markdown>
+          </v-card-text>
+          <v-divider />
+          <v-card-actions v-if="proj.links">
+            <v-btn
+              text
+              v-for="link in proj.links"
+              :key="link.link"
+              @click="urlOpen(link.link)"
+            >{{ link.name }}</v-btn>
+          </v-card-actions>
+        </div>
+      </v-card>
+    </v-hover>
   </v-col>
 </template>
 
 <script>
 import VueMarkdown from "vue-markdown";
 import store from "../store";
+
 import CardFAB from "./CardFAB";
 
 export default {

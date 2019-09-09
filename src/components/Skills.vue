@@ -20,7 +20,7 @@
           </div>
         </v-list-item-action>
       </v-list-item>
-      <v-divider></v-divider>
+      <v-divider />
     </span>
   </v-card>
 </template>
