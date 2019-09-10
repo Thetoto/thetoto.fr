@@ -1,5 +1,5 @@
 <template>
-  <v-container id="home" :class="{'w70':$vuetify.breakpoint.lgAndUp}">
+  <v-container id="home" :class="{'w90':$vuetify.breakpoint.mdAndDown,'w70':$vuetify.breakpoint.lgAndUp}">
     <Toc v-if="$vuetify.breakpoint.lgAndUp" :content="toc_list" />
     <span id="intro">
       <h4Title>Bonjour</h4Title>
@@ -34,6 +34,10 @@
       <h4Title>Projets perso</h4Title>
       <ProjectList msn_id="perso" :list="presentation.projects_perso" />
     </span>
+    <hr />
+    <span id="timeline" class="toc" name="Parcours">
+      <Timeline />
+    </span>
   </v-container>
 </template>
 
@@ -45,10 +49,11 @@ import Toc from "../components/Toc";
 import Skills from "../components/Skills";
 import ProjectList from "../components/ProjectList";
 import h4Title from "../components/small/h4Title";
+import Timeline from "../components/Timeline";
 
 export default {
   name: "Home",
-  components: { VueMarkdown, Toc, Skills, ProjectList, h4Title },
+  components: { VueMarkdown, Toc, Skills, ProjectList, h4Title, Timeline },
   computed: {
     presentation: () => store.state.json.presentation,
     fullscreen: () => store.state.fullscreen
