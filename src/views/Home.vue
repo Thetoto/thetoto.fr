@@ -1,6 +1,6 @@
 <template>
-  <v-container id="home" class="w70">
-    <Toc v-if="!$vuetify.breakpoint.smAndDown" :content="toc_list" />
+  <v-container id="home" :class="{'w70':$vuetify.breakpoint.lgAndUp}">
+    <Toc v-if="$vuetify.breakpoint.lgAndUp" :content="toc_list" />
     <span id="intro">
       <h4Title>Bonjour</h4Title>
       <vue-markdown>{{ presentation.intro }}</vue-markdown>

@@ -3,7 +3,7 @@
     <v-content>
       <v-row>
         <v-col
-          v-if="!fullscreen"
+          v-if="!fullscreen || $vuetify.breakpoint.smAndDown"
           :class="$vuetify.breakpoint.smAndDown ? '' : 'p-fixed'"
           id="header"
           cols="12"
@@ -11,7 +11,7 @@
           lg="4"
         >
           <LeftPane></LeftPane>
-          <v-tooltip v-model="show_on" bottom fixed>
+          <v-tooltip v-if="!$vuetify.breakpoint.smAndDown" v-model="show_on" bottom fixed>
             <template v-slot:activator="{ on }">
               <v-btn
                 v-on="on"
@@ -38,7 +38,7 @@
           lg="4"
         ></v-col>
         <v-col id="router" cols="12" :md="fullscreen ? 12 : 7" :lg="fullscreen ? 12 : 8">
-          <v-tooltip v-if="fullscreen" v-model="show_off" bottom fixed>
+          <v-tooltip v-if="fullscreen && !$vuetify.breakpoint.smAndDown" v-model="show_off" bottom fixed>
             <template v-slot:activator="{ on }">
               <v-btn
                 v-on="on"
