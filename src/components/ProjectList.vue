@@ -10,7 +10,7 @@ import { VueMasonryPlugin } from "vue-masonry";
 import store from "../store";
 
 import ProjectCard from "./ProjectCard";
-import { setTimeout } from "timers";
+import { setTimeout, setInterval, clearInterval } from "timers";
 
 Vue.use(VueMasonryPlugin);
 
@@ -32,7 +32,10 @@ export default {
   },
   mounted() {
     var _this = this;
-    setTimeout(() => _this.$redrawVueMasonry(this.msn_id), 100);
+    this.interval = setInterval(() => _this.$redrawVueMasonry(this.msn_id), 500);
+  },
+  destroyed() {
+    clearInterval(this.interval);
   }
 };
 </script>

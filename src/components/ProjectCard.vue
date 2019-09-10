@@ -43,7 +43,7 @@ export default {
   name: "ProjectCard",
   components: { VueMarkdown, CardFAB },
   props: {
-    proj: Object
+    proj: Object,
   },
   computed: {
     fullscreen: () => store.state.fullscreen
