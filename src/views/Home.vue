@@ -10,16 +10,16 @@
       <h4Title>Informations</h4Title>
       <v-row>
         <v-col cols="12" md="6">
-          <h5 class="display-1 mb-2">A propos</h5>
+          <h5 class="headline font-weight-light mb-2">A propos</h5>
           <vue-markdown>{{ presentation.apropos }}</vue-markdown>
-          <a target="_blank" href="/moderncv.pdf">
+          <a v-if="presentation.cv" target="_blank" :href="presentation.cv">
             <v-btn class="ma-2" outlined>
               <v-icon left>mdi-file-download</v-icon>CV
             </v-btn>
           </a>
         </v-col>
         <v-col cols="12" md="6">
-          <h5 class="display-1 mb-2">Compétences</h5>
+          <h5 class="headline font-weight-light mb-2">Compétences</h5>
           <Skills :list="presentation.skills" />
         </v-col>
       </v-row>

@@ -3,7 +3,7 @@
     <div class="align-self-center text-right">
       <div class="mb-5 w70 float-right">
         <a :href="infos.avatar_url" class="w70">
-          <img id="avatar" class="elevation-14" :src="infos.avatar_url" />
+          <img id="avatar" class="elevation-14" :src="infos.avatar_thumb" />
         </a>
       </div>
       <div class="float-right w100">
