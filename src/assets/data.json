@@ -92,7 +92,7 @@
       "projects": [
          {
             "name": "Elves Must Live",
-            "description": "Un jeu vidéo de \"Tower Defense\" crée sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
+            "description": "Un jeu vidéo de \"Tower Defense\" créé sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
             "image": "/images/thumbs/eml.png",
             "icons": [
                "nf nf-mdi-language_csharp",
@@ -117,7 +117,7 @@
          },
          {
             "name": "Eye of the Graeae",
-            "description": "Eye of the Graeae est un logicel de reconnaissance optique de caractères (OCR) basé sur la technologie des réseaux de neuronnes. (Proof of concept)",
+            "description": "Eye of the Graeae est un logicel de reconnaissance optique de caractères (OCR) basé sur la technologie des réseaux de neurones. (Proof of concept)",
             "image": "/images/thumbs/eye.png",
             "icons": [
                "nf nf-custom-c"
@@ -146,8 +146,8 @@
             "iconsTitle": true
          },
          {
-            "name": "Site de billeterie",
-            "description": "Un site web en Django (Python).\nUn gros projet qui comprend : Un site de billeterie, où l'on peut déposer des events et s'y inscrire et une application mobile pour vérifier les tickets.",
+            "name": "Site de billetterie",
+            "description": "Un site web en Django (Python).\nUn gros projet qui comprend : Un site de billetterie, où l'on peut déposer des events et s'y inscrire et une application mobile pour vérifier les tickets.",
             "icons": [
                "nf nf-dev-python",
                "nf nf-dev-django"
