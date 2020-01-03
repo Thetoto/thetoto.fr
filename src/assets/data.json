@@ -31,8 +31,8 @@
       ]
    },
    "presentation": {
-      "intro": "Je m'appelle Thomas (aka TheToto), j'ai 20 ans et je suis actuellement en quatrième année d'études d'ingénieur en informatique (promo 2021 à l'[EPITA](https://epita.fr \"Site web d'EPITA\")).",
-      "apropos": "Passionné par tout ce qui touche à l'informatique, je me tiens au courant des dernières actualités en permanance. Je travaille dur dans les projets de groupe tout en motivant mes partenaires.\n\nJe maîtrise donc différentes technologies et langages, allant de la programmation pour Arduino, en passant par l'assembleur x86_64, jusqu'à des langages de haut niveau comme le Python ou NodeJS.",
+      "intro": "Je suis actuellement en quatrième année d'études d'ingénieur en informatique (promo 2021 à l'[EPITA](https://epita.fr \"Site web d'EPITA\")).",
+      "apropos": "Toujours au courant des dernières actualités technologique, très actif dans les projets de groupe tout en motivant mes partenaires.\n\nJe suis à l'aise dans un vaste pannel de technologies et langages, allant de la programmation pour Arduino, en passant par l'assembleur x86_64, jusqu'à des langages de haut niveau comme le Python.",
       "cv": "https://files.thetoto.fr/private/cv.pdf",
       "skills": [
          {
@@ -182,7 +182,7 @@
       "projects_perso": [
          {
             "name": "Tranzat Creator",
-            "description": "Créez votre propre tranzat grâce à mon créateur de Tranzat ! Choisissez votre bouche, vos yeux, etc, puis exportez votre tranzat en PNG.",
+            "description": "Un site \"créateur de personnage\" pour créer un \"Tranzat\".",
             "image": "/images/thumbs/tranzat.png",
             "icons": [
                "nf nf-dev-html5",
@@ -202,33 +202,29 @@
             ]
          },
          {
-            "name": "Animation Source app",
-            "description": "Application android réalisée en ReactNative, par pur amusement. Elle permet de naviger sur le site [Animation Source](https://animationsource.org/) de manière simple sur mobile. Elle est accompagnée d'une API (HTML parsing) developpée en NodeJS pour récupérer les informations.",
-            "image": "/images/thumbs/asapp.png",
+            "name": "C'est L'heure",
+            "description": "Bot messenger et site Web où le but est d'envoyer en premier un message à des heures précises.\nDifférentes stats et graphiques sont présentes sur le site.\nLe site et le bot sont en Python/Django.",
+            "image": "/images/thumbs/cestlheure.png",
             "icons": [
-               "nf nf-dev-nodejs_small",
-               "nf nf-dev-react"
+               "nf nf-dev-python",
+               "nf nf-dev-django"
             ],
-            "iconsTitle": false,
+            "iconsTitle": true,
             "floating": {
                "icon": "nf nf-oct-mark_github",
-               "link": "https://github.com/Thetoto/AS_App",
+               "link": "https://github.com/Thetoto/cestlheure",
                "tooltip": "GitHub"
             },
             "links": [
                {
-                  "name": "API Node.JS",
-                  "link": "https://github.com/Thetoto/AnimationSource-API"
-               },
-               {
-                  "name": "Vidéo de présentation",
-                  "link": "https://www.youtube.com/watch?v=VPIuTVG47_k"
+                  "name": "Site Web",
+                  "link": "https://cestlheure.tk"
                }
             ]
          },
          {
             "name": "Thetoto.fr",
-            "description": "Le site web où vous naviguez actuellement.\nIl est développé en VueJS pour découvrir un framework Javascript et le développement Web avancé.",
+            "description": "Le site web où vous naviguez actuellement.\nIl est développé en VueJS pour découvrir un framework Web populaire.",
             "icons": [
                "nf nf-mdi-vuejs"
             ],
@@ -275,10 +271,16 @@
          "year": 2018
       },
       {
+         "title": "Stage technique",
+         "place": "Bouygues Télécom",
+         "description": "Stage d'un semestre chez Bouygues Télécom (Le Spot Bouygues) pour concevoir un scanner de RIB pour en extraire l'IBAN, et un scanner de bande MRZ. Utilisation de Amazon Web Services, Node.JS et Tesseract.",
+         "year": 2019
+      },
+      {
          "title": "Assistant C++/Java (YAKA)",
          "place": "EPITA",
          "description": "Assistant des élèves de troisième année de l'EPITA pour créer et assister les TP de programmation C++ et Java.",
-         "year": 2019
+         "year": 2020
       },
       {
          "title": "Diplôme d'ingénieur",
