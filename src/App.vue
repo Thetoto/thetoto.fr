@@ -98,7 +98,7 @@ export default {
 
 <style scoped>
 #header {
-  background-image: url("/images/bg.jpg");
+  background-image: url("./images/bg.jpg");
   height: 100vh;
 }
 
