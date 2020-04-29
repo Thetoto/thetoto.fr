@@ -25,8 +25,8 @@
       </v-row>
     </span>
     <hr />
-    <span id="proj_maj" class="toc" name="Projets majeurs">
-      <h4Title>Projets majeurs</h4Title>
+    <span id="proj_maj" class="toc" name="Projets scolaires">
+      <h4Title>Projets scolaires</h4Title>
       <ProjectList msn_id="maj" :list="projects" />
     </span>
     <hr />

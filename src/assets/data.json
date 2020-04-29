@@ -40,45 +40,58 @@
                "nf nf-custom-c",
                "nf nf-custom-cpp"
             ],
-            "stars": 4.5
-         },
-         {
-            "icons": [
-               "nf nf-dev-html5",
-               "nf nf-dev-css3"
-            ],
-            "stars": 4.5
+            "hints": ["C", "C++"],
+            "stars": 4
          },
          {
             "icons": [
                "nf nf-dev-python",
                "nf nf-dev-django adjust"
             ],
-            "stars": 4
+            "hints": ["Python", "Django"],
+            "stars": 4.5
          },
          {
             "icons": [
                "nf nf-dev-javascript_badge",
                "nf nf-dev-nodejs adjust"
             ],
+            "hints": ["JavaScript", "NodeJS"],
             "stars": 3.5
-         },
-         {
-            "icons": [
-               "nf nf-mdi-language_csharp"
-            ],
-            "stars": 4
          },
          {
             "icons": [
                "nf nf-linux-archlinux",
                "nf nf-dev-git"
             ],
+            "hints" : ["Linux (ArchLinux)", "Git"],
+            "stars": 4.5
+         },
+         {
+            "icons": [
+               "nf nf-dev-docker"
+            ],
+            "hints" : ["Docker"],
             "stars": 4.5
          },
          {
             "text": "Assembly x86_64",
             "stars": 2.5
+         },
+         {
+            "icons": [
+               "nf nf-dev-html5",
+               "nf nf-dev-css3"
+            ],
+            "hints": ["HTML5", "CSS3"],
+            "stars": 4.5
+         },
+         {
+            "icons": [
+               "nf nf-mdi-language_csharp"
+            ],
+            "hints": ["C#"],
+            "stars": 4
          }
       ]
    },
@@ -106,6 +119,15 @@
                "link": "https://www.youtube.com/watch?v=Hl6p07GA4Yk&list=PLTGwNGYPtQzu4s3vKDsgfxsrP_ReuP-Zf"
             }
          ]
+      },
+      {
+         "name": "Intranet Assistant EPITA",
+         "description": "Dans le cadre de mon travail à EPITA en tant qu'assistant, j'ai maintenu l'intranet des assistants et une partie de l'infrastructure pendant 1 an.",
+         "icons": [
+            "nf nf-dev-python",
+            "nf nf-dev-react"
+         ],
+         "iconsTitle": true
       },
       {
          "name": "Eye of the Graeae",
@@ -193,8 +215,17 @@
          ]
       },
       {
+         "name": "Self Hosted",
+         "description": "J'héberge chez moi un certain nombre de services pour mon utilisation personelle.\n[Gitea](https://git.thetoto.fr), [Server OpenID](https://oidc.thetoto.fr), [NextCloud](https://cloud.thetoto.fr), [Plex](https://media.thetoto.fr), [Home Assistant](https://assistant.thetoto.fr), différents bots, VPN, ...",
+         "icons": [
+            "nf nf-dev-linux",
+            "nf nf-fa-server"
+         ],
+         "iconsTitle": true
+      },
+      {
          "name": "C'est L'heure",
-         "description": "Bot messenger et site Web où le but est d'envoyer en premier un message à des heures précises.\nDifférentes stats et graphiques sont présentes sur le site.\nLe site et le bot sont en Python/Django.",
+         "description": "Bot messenger et site Web où le but est d'envoyer en premier un message à des heures précises.\nDifférentes stats et graphiques sont présentés sur le site.\nLe site et le bot sont en Python/Django.",
          "image": "./images/thumbs/cestlheure.png",
          "icons": [
             "nf nf-dev-python",
@@ -209,6 +240,31 @@
             {
                "name": "Site Web",
                "link": "https://cestlheure.tk"
+            }
+         ]
+      },
+      {
+         "name": "Animation Source app",
+         "description": "Application android réalisée en React Native, par pur amusement. Elle permet de naviger sur le site [Animation Source](https://animationsource.org/) simplement sur mobile. Elle est accompagnée d'une API NodeJS (Web scraping) pour récupérer les informations.",
+         "image": "/images/thumbs/asapp.png",
+         "icons": [
+            "nf nf-dev-nodejs_small",
+            "nf nf-dev-react"
+         ],
+         "iconsTitle": true,
+         "floating": {
+            "icon": "nf nf-oct-mark_github",
+            "link": "https://github.com/Thetoto/AS_App",
+            "tooltip": "GitHub"
+         },
+         "links": [
+            {
+               "name": "API Node.JS",
+               "link": "https://github.com/Thetoto/AnimationSource-API"
+            },
+            {
+               "name": "Vidéo de présentation",
+               "link": "https://www.youtube.com/watch?v=VPIuTVG47_k"
             }
          ]
       },
