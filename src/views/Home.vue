@@ -27,12 +27,12 @@
     <hr />
     <span id="proj_maj" class="toc" name="Projets majeurs">
       <h4Title>Projets majeurs</h4Title>
-      <ProjectList msn_id="maj" :list="presentation.projects" />
+      <ProjectList msn_id="maj" :list="projects" />
     </span>
     <hr />
     <span id="proj_perso" class="toc" name="Projets persos">
       <h4Title>Projets perso</h4Title>
-      <ProjectList msn_id="perso" :list="presentation.projects_perso" />
+      <ProjectList msn_id="perso" :list="projects_perso" />
     </span>
     <hr />
     <span id="timeline" class="toc" name="Parcours">
@@ -56,6 +56,8 @@ export default {
   components: { VueMarkdown, Toc, Skills, ProjectList, h4Title, Timeline },
   computed: {
     presentation: () => store.state.json.presentation,
+    projects_perso: () => store.state.json.projects_perso,
+    projects: () => store.state.json.projects,
     fullscreen: () => store.state.fullscreen
   },
   data() {

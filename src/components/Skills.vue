@@ -10,10 +10,10 @@
         </v-list-item-content>
         <v-list-item-action>
           <div class="right-star">
-            <i v-for="i in skill.stars" :key="i" class="nf nf-fa-star" />
-            <i v-if="skill.half_star" class="nf nf-fa-star_half_o" />
+            <i v-for="i in Math.floor(skill.stars)" :key="i" class="nf nf-fa-star" />
+            <i v-if="Math.floor(skill.stars) != Math.ceil(skill.stars)" class="nf nf-fa-star_half_o" />
             <i
-              v-for="i in (5 - skill.stars - (skill.half_star ? 1 : 0))"
+              v-for="i in (5 - Math.ceil(skill.stars))"
               :key="i + 5"
               class="nf nf-fa-star_o"
             />

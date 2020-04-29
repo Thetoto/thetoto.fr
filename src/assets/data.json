@@ -40,204 +40,193 @@
                "nf nf-custom-c",
                "nf nf-custom-cpp"
             ],
-            "stars": 4,
-            "half_star": true
+            "stars": 4.5
          },
          {
             "icons": [
                "nf nf-dev-html5",
                "nf nf-dev-css3"
             ],
-            "stars": 4,
-            "half_star": true
+            "stars": 4.5
          },
          {
             "icons": [
                "nf nf-dev-python",
                "nf nf-dev-django adjust"
             ],
-            "stars": 4,
-            "half_star": false
+            "stars": 4
          },
          {
             "icons": [
                "nf nf-dev-javascript_badge",
                "nf nf-dev-nodejs adjust"
             ],
-            "stars": 3,
-            "half_star": true
+            "stars": 3.5
          },
          {
             "icons": [
                "nf nf-mdi-language_csharp"
             ],
-            "stars": 4,
-            "half_star": false
+            "stars": 4
          },
          {
             "icons": [
                "nf nf-linux-archlinux",
                "nf nf-dev-git"
             ],
-            "stars": 4,
-            "half_star": true
+            "stars": 4.5
          },
          {
-            "icons": [],
             "text": "Assembly x86_64",
-            "stars": 2,
-            "half_star": true
-         }
-      ],
-      "projects": [
-         {
-            "name": "Elves Must Live",
-            "description": "Un jeu vidéo de \"Tower Defense\" créé sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
-            "image": "./images/thumbs/eml.png",
-            "icons": [
-               "nf nf-mdi-language_csharp",
-               "nf nf-dev-unity_small"
-            ],
-            "iconsTitle": false,
-            "floating": {
-               "icon": "nf nf-fa-external_link",
-               "link": "https://elves-must-live.tk/",
-               "tooltip": "Site Web"
-            },
-            "links": [
-               {
-                  "name": "Github",
-                  "link": "https://github.com/Thetoto/Elves-Must-Live"
-               },
-               {
-                  "name": "Playlist Youtube",
-                  "link": "https://www.youtube.com/watch?v=Hl6p07GA4Yk&list=PLTGwNGYPtQzu4s3vKDsgfxsrP_ReuP-Zf"
-               }
-            ]
-         },
-         {
-            "name": "Eye of the Graeae",
-            "description": "Eye of the Graeae est un logicel de reconnaissance optique de caractères (OCR) basé sur la technologie des réseaux de neurones. (Proof of concept)",
-            "image": "./images/thumbs/eye.png",
-            "icons": [
-               "nf nf-custom-c"
-            ],
-            "iconsTitle": false,
-            "floating": {
-               "icon": "nf nf-oct-mark_github",
-               "link": "https://github.com/Thetoto/Eye-of-the-Graeae",
-               "tooltip": "GitHub"
-            }
-         },
-         {
-            "name": "42sh (shell interactif)",
-            "description": "42sh, un projet phare de l'EPITA, est un shell (style BASH) développé en C.",
-            "icons": [
-               "nf nf-custom-c"
-            ],
-            "iconsTitle": true
-         },
-         {
-            "name": "Spider Web Server (httpd)",
-            "description": "Spider est un server HTTP écrit en C++. Il gère le reverse proxy, un nombre de vhost illimité, ainsi que le HTTPS (SSL/TLS)",
-            "icons": [
-               "nf nf-custom-cpp"
-            ],
-            "iconsTitle": true
-         },
-         {
-            "name": "Site de billetterie",
-            "description": "Un site web en Django (Python).\nUn gros projet qui comprend : Un site de billetterie, où l'on peut déposer des events et s'y inscrire et une application mobile pour vérifier les tickets.",
-            "icons": [
-               "nf nf-dev-python",
-               "nf nf-dev-django"
-            ],
-            "iconsTitle": true,
-            "links": [
-               {
-                  "name": "Github",
-                  "link": "https://github.com/bible-white-corp/yakabible"
-               },
-               {
-                  "name": "Site en ligne",
-                  "link": "http://yakabible.thetoto.fr/"
-               }
-            ]
-         },
-         {
-            "name": "K (kernel)",
-            "description": "Un kernel 'from-scratch' en C et assembleur, où nous devions implémenter différents syscalls et drivers. D'un driver serial pour le syscall `write`, puis la gestion de la mémoire et des interruptions, jusqu'à un driver ATAPI pour charger des ROM en mémoire, et passer en Userland. Plus d'info sur le support de cours ci-dessous.",
-            "icons": [
-               "nf nf-custom-c"
-            ],
-            "iconsTitle": true,
-            "links": [
-               {
-                  "name": "Support de cours",
-                  "link": "https://k.lse.epita.fr/"
-               }
-            ]
-         }
-      ],
-      "projects_perso": [
-         {
-            "name": "Tranzat Creator",
-            "description": "Un site \"créateur de personnage\" pour créer un \"Tranzat\".",
-            "image": "./images/thumbs/tranzat.png",
-            "icons": [
-               "nf nf-dev-html5",
-               "nf nf-dev-javascript_badge"
-            ],
-            "iconsTitle": true,
-            "floating": {
-               "icon": "nf nf-fa-external_link",
-               "link": "https://tranzat.thetoto.fr/",
-               "tooltip": "Site Web"
-            },
-            "links": [
-               {
-                  "name": "Github",
-                  "link": "https://github.com/Thetoto/Tranzat-Creator"
-               }
-            ]
-         },
-         {
-            "name": "C'est L'heure",
-            "description": "Bot messenger et site Web où le but est d'envoyer en premier un message à des heures précises.\nDifférentes stats et graphiques sont présentes sur le site.\nLe site et le bot sont en Python/Django.",
-            "image": "./images/thumbs/cestlheure.png",
-            "icons": [
-               "nf nf-dev-python",
-               "nf nf-dev-django"
-            ],
-            "iconsTitle": true,
-            "floating": {
-               "icon": "nf nf-oct-mark_github",
-               "link": "https://github.com/Thetoto/cestlheure",
-               "tooltip": "GitHub"
-            },
-            "links": [
-               {
-                  "name": "Site Web",
-                  "link": "https://cestlheure.tk"
-               }
-            ]
-         },
-         {
-            "name": "Thetoto.fr",
-            "description": "Le site web où vous naviguez actuellement.\nIl est développé en VueJS pour découvrir un framework Web populaire.",
-            "icons": [
-               "nf nf-mdi-vuejs"
-            ],
-            "iconsTitle": true,
-            "links": [
-               {
-                  "name": "Github",
-                  "link": "https://github.com/Thetoto/thetoto.fr"
-               }
-            ]
+            "stars": 2.5
          }
       ]
    },
+   "projects": [
+      {
+         "name": "Elves Must Live",
+         "description": "Un jeu vidéo de \"Tower Defense\" créé sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
+         "image": "./images/thumbs/eml.png",
+         "icons": [
+            "nf nf-mdi-language_csharp",
+            "nf nf-dev-unity_small"
+         ],
+         "floating": {
+            "icon": "nf nf-fa-external_link",
+            "link": "https://elves-must-live.tk/",
+            "tooltip": "Site Web"
+         },
+         "links": [
+            {
+               "name": "Github",
+               "link": "https://github.com/Thetoto/Elves-Must-Live"
+            },
+            {
+               "name": "Playlist Youtube",
+               "link": "https://www.youtube.com/watch?v=Hl6p07GA4Yk&list=PLTGwNGYPtQzu4s3vKDsgfxsrP_ReuP-Zf"
+            }
+         ]
+      },
+      {
+         "name": "Eye of the Graeae",
+         "description": "Eye of the Graeae est un logicel de reconnaissance optique de caractères (OCR) basé sur la technologie des réseaux de neurones. (Proof of concept)",
+         "image": "./images/thumbs/eye.png",
+         "icons": [
+            "nf nf-custom-c"
+         ],
+         "floating": {
+            "icon": "nf nf-oct-mark_github",
+            "link": "https://github.com/Thetoto/Eye-of-the-Graeae",
+            "tooltip": "GitHub"
+         }
+      },
+      {
+         "name": "42sh (shell interactif)",
+         "description": "42sh, un projet phare de l'EPITA, est un shell (style BASH) développé en C.",
+         "icons": [
+            "nf nf-custom-c"
+         ],
+         "iconsTitle": true
+      },
+      {
+         "name": "Spider Web Server (httpd)",
+         "description": "Spider est un server HTTP écrit en C++. Il gère le reverse proxy, un nombre de vhost illimité, ainsi que le HTTPS (SSL/TLS)",
+         "icons": [
+            "nf nf-custom-cpp"
+         ],
+         "iconsTitle": true
+      },
+      {
+         "name": "Site de billetterie",
+         "description": "Un site web en Django (Python).\nUn gros projet qui comprend : Un site de billetterie, où l'on peut déposer des events et s'y inscrire et une application mobile pour vérifier les tickets.",
+         "icons": [
+            "nf nf-dev-python",
+            "nf nf-dev-django"
+         ],
+         "iconsTitle": true,
+         "links": [
+            {
+               "name": "Github",
+               "link": "https://github.com/bible-white-corp/yakabible"
+            },
+            {
+               "name": "Site en ligne",
+               "link": "http://yakabible.thetoto.fr/"
+            }
+         ]
+      },
+      {
+         "name": "K (kernel)",
+         "description": "Un kernel 'from-scratch' en C et assembleur, où nous devions implémenter différents syscalls et drivers. D'un driver serial pour le syscall `write`, puis la gestion de la mémoire et des interruptions, jusqu'à un driver ATAPI pour charger des ROM en mémoire, et passer en Userland. Plus d'info sur le support de cours ci-dessous.",
+         "icons": [
+            "nf nf-custom-c"
+         ],
+         "iconsTitle": true,
+         "links": [
+            {
+               "name": "Support de cours",
+               "link": "https://k.lse.epita.fr/"
+            }
+         ]
+      }
+   ],
+   "projects_perso": [
+      {
+         "name": "Tranzat Creator",
+         "description": "Un site \"créateur de personnage\" pour créer un \"Tranzat\".",
+         "image": "./images/thumbs/tranzat.png",
+         "icons": [
+            "nf nf-dev-html5",
+            "nf nf-dev-javascript_badge"
+         ],
+         "iconsTitle": true,
+         "floating": {
+            "icon": "nf nf-fa-external_link",
+            "link": "https://tranzat.thetoto.fr/",
+            "tooltip": "Site Web"
+         },
+         "links": [
+            {
+               "name": "Github",
+               "link": "https://github.com/Thetoto/Tranzat-Creator"
+            }
+         ]
+      },
+      {
+         "name": "C'est L'heure",
+         "description": "Bot messenger et site Web où le but est d'envoyer en premier un message à des heures précises.\nDifférentes stats et graphiques sont présentes sur le site.\nLe site et le bot sont en Python/Django.",
+         "image": "./images/thumbs/cestlheure.png",
+         "icons": [
+            "nf nf-dev-python",
+            "nf nf-dev-django"
+         ],
+         "floating": {
+            "icon": "nf nf-oct-mark_github",
+            "link": "https://github.com/Thetoto/cestlheure",
+            "tooltip": "GitHub"
+         },
+         "links": [
+            {
+               "name": "Site Web",
+               "link": "https://cestlheure.tk"
+            }
+         ]
+      },
+      {
+         "name": "Thetoto.fr",
+         "description": "Le site web où vous naviguez actuellement.\nIl est développé en VueJS pour découvrir un framework Web populaire.",
+         "icons": [
+            "nf nf-mdi-vuejs"
+         ],
+         "iconsTitle": true,
+         "links": [
+            {
+               "name": "Github",
+               "link": "https://github.com/Thetoto/thetoto.fr"
+            }
+         ]
+      }
+   ],
    "timeline": [
       {
          "title": "Stage de découverte",

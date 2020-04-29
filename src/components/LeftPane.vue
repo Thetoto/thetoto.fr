@@ -54,7 +54,7 @@ export default {
   methods: {
     saveEmailClipboard() {
       const el = document.createElement("textarea");
-      el.value = "mail@thetoto.fr";
+      el.value = this.infos.email;
       document.body.appendChild(el);
       el.select();
       document.execCommand("copy");

@@ -4,7 +4,7 @@
       <v-card :elevation="hover ? 12 : 2">
         <v-img :src="proj.image">
           <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
-            <i v-for="icon in proj.icons" :key="icon" :class="icon" style="font-size:34px" />
+            <i v-for="icon in proj.icons" :key="icon" :class="icon" style="font-size:36px" class="mr-1" />
           </v-card-title>
         </v-img>
         <div style="position:relative">

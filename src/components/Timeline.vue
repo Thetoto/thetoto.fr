@@ -7,7 +7,7 @@
       <h4Title>Expérience</h4Title>
     </v-timeline-item>
     <v-timeline-item
-      v-for="el in timeline"
+      v-for="el in timeline.slice().reverse()"
       :key="el.title"
       fill-dot
       :left="el.isSchool"
