@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll="onScroll">
+  <div v-scroll="onScroll" v-if="content.length != 0">
     <ul id="table-of-contents">
       <li v-for="el in content" :key="el.id" class="mb-2">
         <a

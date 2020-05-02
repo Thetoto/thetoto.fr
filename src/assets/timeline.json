@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Stage de découverte",
+        "place": "OrthoTech",
+        "description": "Stage de deux mois dans une entreprise fabriquant des appareillages orthopédiques. Découverte duprocessus de production des sièges orthopédiques et du secrétariat.",
+        "year": 2013
+    },
+    {
+        "title": "Baccalauréat Mention Bien",
+        "place": "Lycée Teilhard de Chardin",
+        "isSchool": true,
+        "year": 2015
+    },
+    {
+        "title": "Stage d'été",
+        "place": "Intermarché",
+        "description": "Stage de deux mois dans un hypermarché.",
+        "year": 2018
+    },
+    {
+        "title": "Assistant C#/OCaml (ACDC)",
+        "place": "EPITA",
+        "description": "Assistant des élèves de première année de l'EPITA pour créer et assister les TP de programmation C# et OCaml.",
+        "year": 2018
+    },
+    {
+        "title": "University of Seoul",
+        "place": "Séoul, Corée du Sud",
+        "description": "Echange de 4 mois en Corée du Sud.",
+        "isSchool": true,
+        "year": 2018
+    },
+    {
+        "title": "Stage technique",
+        "place": "Bouygues Télécom",
+        "description": "Stage d'un semestre chez Bouygues Télécom (Le Spot Bouygues) pour concevoir un scanner de RIB pour en extraire l'IBAN, et un scanner de bande MRZ. Utilisation de Amazon Web Services, Node.JS et Tesseract.",
+        "year": 2019
+    },
+    {
+        "title": "Assistant C++/Java (YAKA)",
+        "place": "EPITA",
+        "description": "Assistant des élèves de troisième année de l'EPITA pour créer et assister les TP de programmation C++ et Java.",
+        "year": 2020
+    },
+    {
+        "title": "Diplôme d'ingénieur",
+        "place": "EPITA",
+        "isSchool": true,
+        "year": 2021,
+        "chip": "Futur"
+    }
+]

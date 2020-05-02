@@ -1,6 +1,5 @@
 <template>
-  <v-container id="home" :class="{'w90':$vuetify.breakpoint.mdAndDown,'w70':$vuetify.breakpoint.lgAndUp}">
-    <Toc v-if="$vuetify.breakpoint.lgAndUp" :content="toc_list" />
+  <MainContainer>
     <span id="intro">
       <h4Title>Bonjour</h4Title>
       <vue-markdown>{{ presentation.intro }}</vue-markdown>
@@ -26,8 +25,8 @@
     </span>
     <hr />
     <span id="proj_maj" class="toc" name="Projets scolaires">
-      <h4Title>Projets scolaires</h4Title>
-      <ProjectList msn_id="maj" :list="projects" />
+      <h4Title>Projets scolaires et autres</h4Title>
+      <ProjectList msn_id="maj" :list="projects_school" />
     </span>
     <hr />
     <span id="proj_perso" class="toc" name="Projets persos">
@@ -38,14 +37,14 @@
     <span id="timeline" class="toc" name="Parcours">
       <Timeline />
     </span>
-  </v-container>
+  </MainContainer>
 </template>
 
 <script>
 import store from "../store";
 import VueMarkdown from "vue-markdown";
 
-import Toc from "../components/Toc";
+import MainContainer from "../components/MainContainer";
 import Skills from "../components/Skills";
 import ProjectList from "../components/ProjectList";
 import h4Title from "../components/small/h4Title";
@@ -53,30 +52,15 @@ import Timeline from "../components/Timeline";
 
 export default {
   name: "Home",
-  components: { VueMarkdown, Toc, Skills, ProjectList, h4Title, Timeline },
+  components: { VueMarkdown, Skills, ProjectList, h4Title, Timeline, MainContainer },
   computed: {
-    presentation: () => store.state.json.presentation,
-    projects_perso: () => store.state.json.projects_perso,
-    projects: () => store.state.json.projects,
+    presentation: () => store.state.presentation,
+    projects_perso: () => store.state.projects_perso,
+    projects_school: () => store.state.projects_school,
     fullscreen: () => store.state.fullscreen
-  },
-  data() {
-    return {
-      toc_list: []
-    };
-  },
-  mounted() {
-    var toc = document.querySelectorAll(".toc");
-    var list = this.toc_list;
-    Array.prototype.forEach.call(toc, function(el) {
-      list.push({ id: el.id, name: el.getAttribute("name") });
-    });
   }
 };
 </script>
 
 <style>
-#home {
-  text-align: justify;
-}
 </style>

@@ -2,15 +2,15 @@
   <v-col class="msn-item" cols="12" :md="fullscreen ? 6 : 12" :lg="fullscreen ? 4 : 6">
     <v-hover v-slot:default="{ hover }">
       <v-card :elevation="hover ? 12 : 2">
-        <v-img :src="proj.image">
-          <v-card-title v-if="!proj.iconsTitle" class="white--text align-end fill-height">
-            <i v-for="icon in proj.icons" :key="icon" :class="icon" style="font-size:36px" class="mr-1" />
+        <v-img v-if="proj.image" :src="proj.image">
+          <v-card-title class="white--text align-end fill-height">
+            <i v-for="icon in proj.icons" :key="icon" :class="icon" style="font-size:36px; text-shadow: 0 0 10px black;" class="mr-1" />
           </v-card-title>
         </v-img>
         <div style="position:relative">
           <CardFAB v-if="proj.floating" :floating="proj.floating" :pulse="hover" />
           <v-card-title>
-            <span v-if="proj.iconsTitle" class="mr-1">
+            <span v-if="!proj.image" class="mr-1">
               <i v-for="icon in proj.icons" :key="icon" :class="icon" class="mr-1" />
             </span>
             {{ proj.name }}

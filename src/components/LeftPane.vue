@@ -44,7 +44,7 @@ export default {
     VueMarkdown
   },
   computed: {
-    infos: () => store.state.json.profile
+    infos: () => store.state.profile
   },
   data() {
     return {

@@ -46,7 +46,7 @@ export default {
   name: "Timeline",
   components: { h4Title, VueMarkdown },
   computed: {
-    timeline: () => store.state.json.timeline,
+    timeline: () => store.state.timeline,
     fullscreen: () => store.state.fullscreen
   }
 };

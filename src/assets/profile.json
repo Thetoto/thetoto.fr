@@ -1,0 +1,31 @@
+{
+    "firstname": "Thomas",
+    "lastname": "Lupin",
+    "pseudo": "TheToto",
+    "short_bio_md": "étudiant en ingénieurie\n informatique à l'[EPITA](https://epita.fr \"Site web d'EPITA\").",
+    "avatar_thumb": "./images/avatar.png",
+    "avatar_url": "https://files.thetoto.fr/private/avatar.png",
+    "email": "mail@thetoto.fr",
+    "links": [
+       {
+          "icon": "nf nf-fa-facebook_square",
+          "url": "https://facebook.com/thomaslupin"
+       },
+       {
+          "icon": "nf nf-fa-linkedin_square",
+          "url": "https://www.linkedin.com/in/tlupin/"
+       },
+       {
+          "icon": "nf nf-oct-mark_github",
+          "url": "https://github.com/Thetoto"
+       },
+       {
+          "icon": "nf nf-fa-youtube_play",
+          "url": "https://www.youtube.com/user/MtTheToto"
+       },
+       {
+          "icon": "nf nf-fa-envelope",
+          "url": "mailto:mail@thetoto.fr"
+       }
+    ]
+ }
