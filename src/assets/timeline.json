@@ -37,10 +37,22 @@
         "year": 2019
     },
     {
-        "title": "Assistant C++/Java (YAKA)",
+        "title": "Assistant C++/Java (YAKA) - Dev",
         "place": "EPITA",
-        "description": "Assistant des élèves de troisième année de l'EPITA pour créer et assister les TP de programmation C++ et Java.",
+        "description": "Assistant des élèves de 3ème année de l'EPITA pour créer et assister les TP de programmation C++ et Java.",
         "year": 2020
+    },
+    {
+        "title": "Stage de formation",
+        "place": "EPITA",
+        "description": "Stage de formation fourni par EPITA, pour renforcer mes connaissances sur des sujets techniques (SQL/JAVA/C++) et humains (Gêrer une équipe, travailler en équipe).",
+        "year": 2019
+    },
+    {
+        "title": "Assistant C/UNIX (ACU) - Dev",
+        "place": "EPITA",
+        "description": "Assistant des élèves de troisième année de l'EPITA pour créer et assister les TP de programmation C/UNIX. Mon rôle de dev dans l'équipe est développer les outils nécessaire à l'équipe et de maintenir l'infrastructure.",
+        "year": 2021
     },
     {
         "title": "Diplôme d'ingénieur",
