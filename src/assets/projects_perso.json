@@ -25,6 +25,12 @@
         "icons": [
             "nf nf-dev-linux",
             "nf nf-fa-server"
+        ],
+       "links": [
+            {
+                "name": "Github",
+                "link": "https://github.com/Thetoto/selfhosted"
+            }
         ]
     },
     {
