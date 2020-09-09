@@ -15,7 +15,7 @@
         </v-list-item-content>
         <v-list-item-action>
           <div class="right-star">
-            <i v-for="i in Math.floor(skill.stars)" :key="i" class="nf nf-fa-star" />
+            <i v-for="i in Math.floor(skill.stars)" :key="i" class="nf" :class="{'nf-mdi-heart': skill.heart, 'nf-fa-star': !skill.heart}" />
             <i
               v-if="Math.floor(skill.stars) != Math.ceil(skill.stars)"
               class="nf nf-fa-star_half_o"

@@ -17,6 +17,21 @@
       ]
    },
    {
+      "name": "Optimisation de driver",
+      "description": "Optimisation d'un driver I2C pour l'ESP32 pour l'utilisation d'ArduPilot.",
+      "icons": [
+         "nf nf-custom-c"
+      ]
+   },
+   {
+      "name": "Conduite avec OpenCV",
+      "description": "Navigation et évitement d'obstacle d'une voiture miniature avec à l'aide d'OpenCV.",
+      "icons": [
+         "nf nf-custom-c",
+         "nf nf-dev-react"
+      ]
+   },
+   {
       "name": "Elves Must Live",
       "description": "Un jeu vidéo de \"Tower Defense\" créé sous **Unity3D** lors de ma première année à l'EPITA. Consultez le site web pour plus d'informations.",
       "image": "./images/thumbs/eml.png",

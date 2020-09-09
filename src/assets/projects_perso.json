@@ -1,25 +1,5 @@
 [
     {
-        "name": "Tranzat Creator",
-        "description": "Un site \"créateur de personnage\" pour créer un \"Tranzat\".",
-        "image": "./images/thumbs/tranzat.png",
-        "icons": [
-            "nf nf-dev-html5",
-            "nf nf-dev-javascript_badge"
-        ],
-        "floating": {
-            "icon": "nf nf-fa-external_link",
-            "link": "https://tranzat.thetoto.fr/",
-            "tooltip": "Site Web"
-        },
-        "links": [
-            {
-                "name": "Github",
-                "link": "https://github.com/Thetoto/Tranzat-Creator"
-            }
-        ]
-    },
-    {
         "name": "Self Hosted",
         "description": "J'héberge chez moi un certain nombre de services pour mon utilisation personelle.\n[Gitea](https://git.thetoto.fr), [Server OpenID](https://oidc.thetoto.fr), [NextCloud](https://cloud.thetoto.fr), [Plex](https://media.thetoto.fr), [Home Assistant](https://assistant.thetoto.fr), différents bots, VPN, ...",
         "icons": [
